@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "singularName": "room",
+    "pluralName": "rooms",
+    "displayName": "spaces",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "spaces.detail"
+    },
+    "adicionales": {
+      "type": "text"
+    },
+    "nightprice": {
+      "type": "biginteger"
+    },
+    "maxpeople": {
+      "type": "integer"
+    },
+    "spaceavailability": {
+      "type": "boolean"
+    },
+    "reservation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::reservation.reservation",
+      "inversedBy": "spaces"
+    }
+  }
+}

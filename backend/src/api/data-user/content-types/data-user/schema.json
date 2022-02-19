@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_users",
+  "info": {
+    "singularName": "data-user",
+    "pluralName": "data-users",
+    "displayName": "dataUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "typedoc": {
+      "type": "enumeration",
+      "enum": [
+        "cedula",
+        "pasaporte",
+        "registrocivil",
+        "extrangeria",
+        "identidad"
+      ],
+      "required": true
+    },
+    "identidad": {
+      "type": "biginteger",
+      "max": "30",
+      "min": "8",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40,
+      "minLength": 3
+    },
+    "lastname": {
+      "type": "string",
+      "required": false,
+      "maxLength": 40,
+      "minLength": 4
+    },
+    "job": {
+      "type": "string",
+      "maxLength": 40,
+      "minLength": 2
+    },
+    "address": {
+      "type": "string",
+      "maxLength": 80,
+      "minLength": 2
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "maxLength": 40,
+      "unique": true
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "enumeration",
+      "enum": [
+        "masculino",
+        "femenino"
+      ]
+    },
+    "requerimientos": {
+      "type": "text"
+    },
+    "autorizaciones": {
+      "type": "text"
+    },
+    "parent": {
+      "type": "integer"
+    },
+    "typeuser": {
+      "type": "integer"
+    },
+    "fechas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "date.nacimiento"
+    },
+    "infantil": {
+      "type": "component",
+      "repeatable": true,
+      "component": "infantil.datoshijos"
+    },
+    "companion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "date.pricipaldata"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_infantil_datoshijos",
+  "info": {
+    "displayName": "datoshijos",
+    "icon": "boxes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tutor": {
+      "type": "string"
+    },
+    "identificaciontutor": {
+      "type": "string"
+    },
+    "telefonotutor": {
+      "type": "string"
+    },
+    "requerimientosespeciales": {
+      "type": "text"
+    },
+    "principaldata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "date.pricipaldata"
+    }
+  }
+}

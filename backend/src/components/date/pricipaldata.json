@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_date_pricipaldata",
+  "info": {
+    "displayName": "pricipaldata",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "tipoid": {
+      "type": "enumeration",
+      "enum": [
+        "cedula",
+        "tarjetaidentidad",
+        "pasaporte",
+        "tarjetaextranjeria",
+        "registrocivil"
+      ]
+    },
+    "numberid": {
+      "type": "biginteger"
+    },
+    "sexo": {
+      "type": "enumeration",
+      "enum": [
+        "masculino",
+        "femenino"
+      ]
+    }
+  }
+}

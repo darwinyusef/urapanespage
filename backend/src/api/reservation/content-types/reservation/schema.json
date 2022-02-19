@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "reservation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "indate": {
+      "type": "datetime"
+    },
+    "outdate": {
+      "type": "datetime"
+    },
+    "reservationtype": {
+      "type": "enumeration",
+      "enum": [
+        "telefono",
+        "directo",
+        "redessociales",
+        "agencia",
+        "paginaweb",
+        "internet"
+      ]
+    },
+    "tipoacomodacion": {
+      "type": "text"
+    },
+    "mediodepago": {
+      "type": "string"
+    },
+    "totalprice": {
+      "type": "biginteger"
+    },
+    "motivo": {
+      "type": "text"
+    },
+    "spaces": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::room.room",
+      "mappedBy": "reservation"
+    }
+  }
+}

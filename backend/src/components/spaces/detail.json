@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_spaces_details",
+  "info": {
+    "displayName": "detail",
+    "icon": "city"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "formadepago": {
+      "type": "text"
+    },
+    "availability": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "principalimage": {
+      "type": "string"
+    },
+    "images": {
+      "type": "json"
+    }
+  }
+}

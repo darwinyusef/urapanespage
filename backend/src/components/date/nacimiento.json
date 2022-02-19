@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_date_nacimientos",
+  "info": {
+    "displayName": "fechas",
+    "icon": "dice-six",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "idplace": {
+      "type": "integer"
+    },
+    "typedate": {
+      "type": "enumeration",
+      "enum": [
+        "nacimiento",
+        "residencia",
+        "procedencia"
+      ]
+    }
+  }
+}
